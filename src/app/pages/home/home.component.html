@@ -1,0 +1,303 @@
+<!--          HEADER PART        -->
+<section id="header">
+  <div class="top_header ">
+    <nav class="top_header_div uk-navbar-container top_header_div" uk-navbar>
+      <div class="uk-navbar-left">
+
+        <ul class="uk-navbar-nav navbar_height">
+          <li>
+            <a class="navbar_height uk-text-capitalize" >Currency : <span>&nbsp; GDB</span></a>
+            <div class="uk-navbar-dropdown">
+              <ul class="uk-nav uk-navbar-dropdown-nav">
+<!--                <li class="uk-active"><a href="#">Active</a></li>-->
+                <li><a >AZN</a></li>
+                <li><a >USD</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav navbar_height">
+          <li><a class="register_button navbar_height uk-text-capitalize " >Register</a></li>
+          <li><a class="signin_button navbar_height uk-text-capitalize " >Sign in</a></li>
+          <li>
+            <a class="shopping_card_button navbar_height uk-text-capitalize " ><span class="uk-float-left uk-margin-auto-right" uk-icon="cart"></span> empty<span class="uk-float-right uk-margin-auto-left" uk-icon="chevron-down"></span> </a>
+            <div class="uk-navbar-dropdown">
+              <ul class="uk-nav uk-navbar-dropdown-nav">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+
+    </nav>
+  </div>
+  <div class="banner_part ">
+    <div class="uk-position-relative">
+      <img src="assets/images/main_banner.svg" alt="">
+      <div class="uk-position-top">
+        <nav class="uk-navbar-container uk-navbar-transparent contained" uk-navbar>
+          <div class="uk-navbar-left">
+
+            <ul class="uk-navbar-nav navbar_height">
+              <li>
+                <a class="uk-navbar-item uk-logo the_logo_font" href="#"><span class="uk-text-bold">AVENUE</span>&nbsp; FASHION</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="uk-navbar-right">
+
+            <ul class="uk-navbar-nav navbar_height">
+              <li class="uk-flex">
+                <a href="#" *ngFor="let menu of menus">{{menu.name}}</a>
+                <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                  <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                    <div>
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                      </ul>
+                    </div>
+                    <div class="sale_div">
+                      <p class="sale_anounce ">Autumn sale!</p>
+                      <p class="sale_text uk-margin-remove">up to 80%</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <button class="uk-button uk-button-default uk-button-large uk-float-right uk-position-relative uk-text-uppercase shop_more">MEN's collection</button>
+  </div>
+</section>
+<!--          HEADER PART ENDS        -->
+
+<!--          PRODUCTS PART        -->
+<section id="products" class="uk-margin-medium-top">
+  <hr class="dividing_section">
+  <div class="uk-navbar-container contained changing_bg" >
+    <ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+      <li><a class="links" href="#">Popular</a></li>
+      <li><a class="links" href="#">new arrival</a></li>
+      <li><a class="links" href="#">bestsellers</a></li>
+    </ul>
+
+    <ul class="uk-switcher uk-margin">
+      <li>
+        <div class="uk-text-center" uk-grid>
+          <div class="uk-width-1-2">
+            <div class="uk-text-center" uk-grid>
+              <div class="uk-width-1-2">
+                  <div class="card">
+                    <a href="#" class="card__button">Learn more</a>
+                  </div>
+              </div>
+              <div class="uk-width-1-2">
+                  <div class="card">
+                    <p class="product_price uk-float-left">£89.99</p>
+                    <div class="card__button">
+                      <p>WOMENS BURNT ORANGE CASUAL TEE  £29.95</p>
+                      <p>Classic casual t-shirt for women on the move.</p>
+                      <p>100% cotton.</p>
+                      <p>A hard-wearing sports t-shirt with microvent technology.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="uk-width-1-1">
+              <div class="card large_card">
+                <div class="card__button">
+                  <p>WOMENS BURNT ORANGE CASUAL TEE  £29.95</p>
+                  <p>Classic casual t-shirt for women on the move.</p>
+                  <p>100% cotton.</p>
+                  <p>A hard-wearing sports t-shirt with microvent technology.</p>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="uk-width-1-2">
+            <div class="uk-text-center" uk-grid>
+              <div class="uk-width-1-1">
+                <div class="card large_card">
+                <div class="card__button">
+                  <p>WOMENS BURNT ORANGE CASUAL TEE  £29.95</p>
+                  <p>Classic casual t-shirt for women on the move.</p>
+                  <p>100% cotton.</p>
+                  <p>A hard-wearing sports t-shirt with microvent technology.</p>
+                </div>
+              </div>
+              </div>
+              <div class="uk-width-1-2">
+                <div class="card">
+                  <a href="#" class="card__button">Learn more</a>
+                </div>
+              </div>
+              <div class="uk-width-1-2">
+                <div class="card">
+                  <p class="product_price uk-float-left">£89.99</p>
+                  <div class="card__button">
+                    <p>WOMENS BURNT ORANGE CASUAL TEE  £29.95</p>
+                    <p>Classic casual t-shirt for women on the move.</p>
+                    <p>100% cotton.</p>
+                    <p>A hard-wearing sports t-shirt with microvent technology.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>Hello again!</li>
+      <li>Bazinga!</li>
+    </ul>
+  </div>
+  <hr class="dividing_section">
+</section>
+<!--          PRODUCTS ENDS        -->
+
+
+<!--          LOOKBOOK STARTS        -->
+<section id="lookbook">
+  <div class="uk-text-center" uk-grid>
+    <div class="uk-width-1-3">
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+          <div class="uk-card-media-left uk-cover-container">
+            <img src="assets/images/item1.svg" alt="" uk-cover>
+            <canvas width="600" height="400"></canvas>
+          </div>
+          <div>
+            <div class="uk-card-body dec_pad">
+              <h3 class="uk-card-title uk-float-right men">Men's</h3>
+              <p class="uk-float-right lookbook_h">LOOKBOOK</p>
+              <p class="uk-float-right uk-text-right lookbook_text">Lorem ipsum dolor sit amet eras facilisis
+                consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
+              </p>
+              <button class="uk-button uk-button-default uk-button-small uk-float-right uk-position-relative uk-text-uppercase ">MEN's collection</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="uk-width-1-3">
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+          <div class="uk-card-media-left uk-cover-container">
+            <img src="assets/images/item1.svg" alt="" uk-cover>
+            <canvas width="600" height="400"></canvas>
+          </div>
+          <div>
+            <div class="uk-card-body dec_pad">
+              <h3 class="uk-card-title uk-float-right men">Men's</h3>
+              <p class="uk-float-right lookbook_h">LOOKBOOK</p>
+              <p class="uk-float-right uk-text-right lookbook_text">Lorem ipsum dolor sit amet eras facilisis
+                consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
+              </p>
+              <button class="uk-button uk-button-default uk-button-small uk-float-right uk-position-relative uk-text-uppercase ">MEN's collection</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="uk-width-1-3">
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+          <div class="uk-card-media-left uk-cover-container">
+            <img src="assets/images/item1.svg" alt="" uk-cover>
+            <canvas width="600" height="400"></canvas>
+          </div>
+          <div>
+            <div class="uk-card-body dec_pad">
+              <h3 class="uk-card-title uk-float-right men">Men's</h3>
+              <p class="uk-float-right lookbook_h">LOOKBOOK</p>
+              <p class="uk-float-right uk-text-right lookbook_text">Lorem ipsum dolor sit amet eras facilisis
+                consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
+              </p>
+              <button class="uk-button uk-button-default uk-button-small uk-float-right uk-position-relative uk-text-uppercase ">MEN's collection</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+<!--          LOOKBOOK ENDS        -->
+
+
+<!--          FOOTER STARTS        -->
+<footer >
+  <div class="uk-child-width-1-5 uk-grid-small uk-text-center footer_padding" uk-grid>
+    <div>
+      <h4>Default</h4>
+      <ul class="uk-list uk-list-large">
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Default</h4>
+      <ul class="uk-list uk-list-large">
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Default</h4>
+      <ul class="uk-list uk-list-large">
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Default</h4>
+      <ul class="uk-list uk-list-large">
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Default</h4>
+      <ul class="uk-list uk-list-large">
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+      </ul>
+    </div>
+  </div>
+  <div class="uk-text-center award" uk-grid>
+    <div class="uk-width-1-2">
+  <div class="sale_div_footer">
+    <p class="sale_anounce ">Autumn sale!</p>
+    <p class="sale_text uk-margin-remove">up to 80%</p>
+  </div>
+    </div>
+      <div class="uk-width-1-2">
+    <div class="sale_div_footer_green">
+      <p class="sale_anounce ">Autumn sale!</p>
+      <p class="sale_text uk-margin-remove">up to 80%</p>
+    </div>
+    </div>
+  </div>
+</footer>
+<!--          FOOTER ENDS        -->
