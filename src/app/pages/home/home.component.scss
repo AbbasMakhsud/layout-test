@@ -145,14 +145,7 @@ background: none !important;
   height: 800px !important;
 }
 
-@media (max-width: 1800px) {
-  .card {
-    height: 300px;
-  }
-  .large_card{
-    height: 500px !important;
-  }
-}
+
 
 .dec_pad{
   padding-right: 12px;
@@ -210,4 +203,149 @@ footer{
   align-items: center;
   justify-content: center;
   padding: 0;
+}
+@media (max-width: 1800px) {
+  .card {
+    height: 300px;
+  }
+  .large_card{
+    height: 500px !important;
+  }
+  .men{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+
+  .lookbook_h{
+    font-size: 25px;
+    margin-bottom: 4px;
+    margin-top: 0;
+  }
+
+  .lookbook_text{
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+}
+.bottom_texts{
+  margin: 0;
+  font-size: 14px;
+}
+.dark_footer{
+  height: 40px;
+  background: #333333;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 994px) {
+  .large_card {
+    height: 389px !important;
+  }
+  .card{
+    height: 200px;
+  }
+  .info_text{
+    margin-bottom: 5px;
+    font-size: 11px;
+    margin-top: 5px;
+  }
+  .top_header_div{
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .contained{
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .shop_more {
+    bottom: 92px;
+    right: 28px;
+  }
+  .uk-navbar-nav > li > a {
+    font-size: 11px;
+  }
+  .for_desk{
+    display: none;
+  }
+  .uk-navbar-nav > li > a, .uk-navbar-item, .uk-navbar-toggle {
+    min-height: 45px;
+  }
+  .footer_padding{
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+  .award{
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+  .bottom_texts{
+    margin: 0;
+    font-size: 10px;
+  }
+}
+.for_mobile{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  background: #fbfbfb;
+  position: absolute;
+  right: 49px;
+  z-index: 6;
+  width: 266px;
+}
+/* FIRST EXAMPLE */
+.hidden-up-to-m {
+  display: none;
+  margin-left: auto;
+}
+@media (min-width: 960px) { /* @breakpoint-small */
+  //.hidden-up-to-m {
+  //  display: block;
+  //}
+
+}
+
+@media (max-width: 663px) {
+  .shop_more{
+    bottom: 50px;
+    right: 28px;
+    padding: 0 10px;
+    font-size: 10px;
+    line-height: 38px;
+  }
+  .shopping_card_button {
+    width: 100px;
+    height: 46px;
+    background: #00C8C8;
+    color: #FFFFFF;
+  }
+  .uk-navbar-nav > li > a, .uk-navbar-item, .uk-navbar-toggle {
+    padding: 0 6px;
+  }
+  .uk-subnav > * {
+    padding-left: 5px;
+  }
+  .hidden_on_s{
+    display: none;
+  }
+  .on_mob{
+    justify-content: space-around;
+  }
+  .fonted_for_mob{
+    font-size: 13px;
+  }
+  .sale_anounce {
+    font-size: 22px;
+  }
+  .sale_text{
+    font-size: 22px;
+  }
+  .dark_footer {
+    padding-bottom: 6px;
+  }
 }
