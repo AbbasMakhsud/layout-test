@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+  menus = [
+    { name: 'MEN'},
+    { name: 'WOMEN'},
+    { name: 'THE BRAND'},
+    { name: 'LOCAL STORE'},
+    { name: 'LOOK BOOK'},
+  ];
   constructor() { }
 
   ngOnInit() {

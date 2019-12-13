@@ -1,0 +1,148 @@
+.contained{
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.coloring{
+  color: #222222 !important;
+}
+.navbar_height{
+  min-height: 45px;
+}
+.the_logo_font{
+  font-size: 24px;
+  color: #222222;
+}
+
+.sale_div{
+  background: #000000;
+  width: 100%;
+  color: #FFFFFF;
+  margin-left: 50px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+
+.sale_div_footer{
+  background: #000000;
+  //width: 100%;
+  color: #FFFFFF;
+  //margin-left: 50px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.sale_anounce{
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.sale_text{
+  text-align: center;
+  font-size: 36px;
+}
+.hidden-up-to-m {
+  display: none;
+  margin-left: auto;
+}
+.for_mobile{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  background: #fbfbfb;
+  position: absolute;
+  right: 49px;
+  z-index: 6;
+  width: 266px;
+}
+.top_header_div{
+  padding-left: 20%;
+  padding-right: 20%;
+  height: 46px;
+  background: #333333;
+}
+
+.shopping_card_button{
+  width: 147px;
+  height:46px;
+  background: #00C8C8;
+  color: #FFFFFF;
+}
+@media (max-width: 994px) {
+  .large_card {
+    height: 389px !important;
+  }
+  .card {
+    height: 200px;
+  }
+  .info_text {
+    margin-bottom: 5px;
+    font-size: 11px;
+    margin-top: 5px;
+  }
+  .top_header_div {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .contained {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .uk-navbar-nav > li > a {
+    font-size: 11px;
+  }
+  .for_desk{
+    display: none;
+  }
+  .uk-navbar-nav > li > a, .uk-navbar-item, .uk-navbar-toggle {
+    min-height: 45px;
+  }
+}
+@media (max-width: 663px) {
+  .shop_more{
+    bottom: 50px;
+    right: 28px;
+    padding: 0 10px;
+    font-size: 10px;
+    line-height: 38px;
+  }
+  .shopping_card_button {
+    width: 100px;
+    height: 46px;
+    background: #00C8C8;
+    color: #FFFFFF;
+  }
+  .uk-navbar-nav > li > a, .uk-navbar-item, .uk-navbar-toggle {
+    padding: 0 6px;
+  }
+  .uk-subnav > * {
+    padding-left: 5px;
+  }
+  .hidden_on_s{
+    display: none;
+  }
+  .on_mob{
+    justify-content: space-around;
+  }
+  .fonted_for_mob{
+    font-size: 13px;
+  }
+  .sale_anounce {
+    font-size: 22px;
+  }
+  .sale_text{
+    font-size: 22px;
+  }
+  .dark_footer {
+    padding-bottom: 6px;
+  }
+}
