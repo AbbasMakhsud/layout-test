@@ -11,8 +11,8 @@ footer{
   display: flex;
   align-items: center;
   justify-items: center;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .award{
   display: flex;
@@ -72,7 +72,12 @@ footer{
   align-items: flex-end;
   padding-bottom: 15px;
 }
-
+.uk-list > li:nth-child(n+2), .uk-list > li > ul {
+  margin-top: 10px;
+}
+.fonted_for_mob{
+  font-size: 14px;
+}
 @media (max-width: 994px) {
   .large_card {
     height: 389px !important;
