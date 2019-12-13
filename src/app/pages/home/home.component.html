@@ -162,7 +162,7 @@
                   </div>
               </div>
               <div class="uk-width-1-2 ">
-                  <div class="card">
+                  <div class="card" routerLink="/product-view">
                     <p class="product_price uk-float-left">£89.99</p>
                     <div class="card__button">
                       <p  class="info_text uk-text-bold">WOMENS BURNT ORANGE CASUAL TEE  £29.95</p>
@@ -172,7 +172,7 @@
                   </div>
               </div>
               <div class="uk-width-1-1">
-              <div class="card large_card">
+              <div class="card large_card" routerLink="/product-view">
                 <div class="card__button">
                   <p  class="info_text uk-text-bold">WOMENS BURNT ORANGE CASUAL TEE  £29.95</p>
                   <p  class="info_text uk-text-capitalize">Classic casual t-shirt for women on the move.</p>
@@ -185,7 +185,7 @@
           <div class="uk-width-1-2@l uk-width-1-1@m">
             <div class="uk-text-center" uk-grid>
               <div class="uk-width-1-1">
-                <div class="card large_card">
+                <div class="card large_card" routerLink="/product-view">
                 <div class="card__button">
                   <p class="info_text uk-text-bold">WOMENS BURNT ORANGE CASUAL TEE  £29.95</p>
                   <p class="info_text uk-text-capitalize">Classic casual t-shirt for women on the move.</p>
@@ -195,11 +195,11 @@
               </div>
               <div class="uk-width-1-2">
                 <div class="card">
-                  <a href="#" class="card__button">Learn more</a>
+                  <a class="card__button" routerLink="/product-view">Learn more</a>
                 </div>
               </div>
               <div class="uk-width-1-2">
-                <div class="card">
+                <div class="card" routerLink="/product-view">
                   <p class="product_price uk-float-left">£89.99</p>
                   <div class="card__button">
                     <p  class="info_text uk-text-bold">WOMENS BURNT ORANGE CASUAL TEE  £29.95</p>
@@ -224,7 +224,7 @@
 <!--          LOOKBOOK STARTS        -->
 <section id="lookbook">
   <div class="uk-text-center" uk-grid>
-    <div class="uk-width-1-3@m uk-width-1-1@s">
+    <div class="uk-width-1-3@m uk-width-1-1@s" *ngFor="let lookbok of lookBooks">
         <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
           <div class="uk-card-media-left uk-cover-container">
             <img src="assets/images/item1.svg" alt="" uk-cover>
@@ -232,48 +232,10 @@
           </div>
           <div class="dec_pad">
             <div class="uk-card-body uk-flex uk-flex-column uk-align-right uk-text-right">
-              <h3 class="uk-card-title uk-float-right men">Men's</h3>
+              <h3 class="uk-card-title uk-float-right men">{{lookbok.name}}</h3>
               <p class="uk-float-right lookbook_h">LOOKBOOK</p>
-              <p class="uk-float-right uk-text-right lookbook_text">Lorem ipsum dolor sit amet eras facilisis
-                consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
-              </p>
-              <button class="uk-button uk-button-default uk-button-small uk-float-right uk-position-relative uk-text-uppercase ">MEN's collection</button>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="uk-width-1-3@m uk-width-1-1@s">
-        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-          <div class="uk-card-media-left uk-cover-container">
-            <img src="assets/images/item1.svg" alt="" uk-cover>
-            <canvas width="600" height="400"></canvas>
-          </div>
-          <div class="dec_pad">
-            <div class="uk-card-body uk-flex uk-flex-column uk-align-right uk-text-right">
-              <h3 class="uk-card-title uk-float-right men">Men's</h3>
-              <p class="uk-float-right lookbook_h">LOOKBOOK</p>
-              <p class="uk-float-right uk-text-right lookbook_text">Lorem ipsum dolor sit amet eras facilisis
-                consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
-              </p>
-              <button class="uk-button uk-button-default uk-button-small uk-float-right uk-position-relative uk-text-uppercase ">MEN's collection</button>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="uk-width-1-3@m uk-width-1-1@s">
-        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-          <div class="uk-card-media-left uk-cover-container">
-            <img src="assets/images/item1.svg" alt="" uk-cover>
-            <canvas width="600" height="400"></canvas>
-          </div>
-          <div class="dec_pad">
-            <div class="uk-card-body uk-flex uk-flex-column uk-align-right uk-text-right">
-              <h3 class="uk-card-title uk-float-right men">Men's</h3>
-              <p class="uk-float-right lookbook_h">LOOKBOOK</p>
-              <p class="uk-float-right uk-text-right lookbook_text">Lorem ipsum dolor sit amet eras facilisis
-                consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
-              </p>
-              <button class="uk-button uk-button-default uk-button-small uk-float-right uk-position-relative uk-text-uppercase ">MEN's collection</button>
+              <p class="uk-float-right uk-text-right lookbook_text">{{lookbok.description}} </p>
+              <button class="uk-button uk-button-default uk-button-small uk-float-right uk-position-relative uk-text-uppercase ">{{lookbok.actionName}}</button>
             </div>
           </div>
         </div>

@@ -1,0 +1,134 @@
+<!--          HEADER PART        -->
+<section id="header">
+  <div class="top_header ">
+    <nav class="top_header_div uk-navbar-container top_header_div" uk-navbar>
+      <div class="uk-navbar-left">
+
+        <ul class="uk-navbar-nav navbar_height">
+          <li>
+            <a class="navbar_height uk-text-capitalize" >Currency : <span>&nbsp; GDB</span></a>
+            <div class="uk-navbar-dropdown">
+              <ul class="uk-nav uk-navbar-dropdown-nav">
+                <!--                <li class="uk-active"><a href="#">Active</a></li>-->
+                <li><a >AZN</a></li>
+                <li><a >USD</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav navbar_height">
+          <li><a class="register_button navbar_height uk-text-capitalize " >Register</a></li>
+          <li><a class="signin_button navbar_height uk-text-capitalize " >Sign in</a></li>
+          <li>
+            <a class="shopping_card_button navbar_height uk-text-capitalize " ><span class="uk-float-left uk-margin-auto-right" uk-icon="cart"></span> empty<span class="uk-float-right uk-margin-auto-left" uk-icon="chevron-down"></span> </a>
+            <div class="uk-navbar-dropdown">
+              <ul class="uk-nav uk-navbar-dropdown-nav">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+
+    </nav>
+  </div>
+  <div class="banner_part ">
+    <div class="uk-position-relative">
+      <img src="assets/images/main_banner.svg" alt="">
+      <div class="uk-position-top">
+        <nav class="uk-navbar-container uk-navbar-transparent contained" uk-navbar>
+
+
+          <div class="uk-navbar-left">
+
+            <ul class="uk-navbar-nav navbar_height">
+              <li>
+                <a class="uk-navbar-item uk-logo the_logo_font" href="#"><span class="uk-text-bold">AVENUE</span>&nbsp; FASHION</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="uk-navbar-right for_desk">
+
+            <ul class="uk-navbar-nav navbar_height">
+              <li class="uk-flex" *ngFor="let menu of menus">
+                <a href="#" class="coloring">{{menu.name}} <span  uk-icon="chevron-down"></span></a>
+                <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                  <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                    <div>
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                      </ul>
+                    </div>
+                    <div class="sale_div">
+                      <p class="sale_anounce ">Autumn sale!</p>
+                      <p class="sale_text uk-margin-remove">up to 80%</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navbar-collapse hidden-up-to-m ">
+            <div class="uk-navbar-right ">
+
+              <ul class="uk-navbar-nav navbar_height">
+                <li class="uk-flex for_mobile">
+                  <a href="#" *ngFor="let menu of menus" >{{menu.name}}</a>
+                  <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                    <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                      <div>
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li class="uk-nav-header">Header</li>
+                          <li><a href="#">Item</a></li>
+                          <li><a href="#">Item</a></li>
+                          <li><a href="#">Item</a></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li class="uk-nav-header">Header</li>
+                          <li><a href="#">Item</a></li>
+                          <li><a href="#">Item</a></li>
+                          <li><a href="#">Item</a></li>
+                        </ul>
+                      </div>
+                      <div class="sale_div">
+                        <p class="sale_anounce ">Autumn sale!</p>
+                        <p class="sale_text uk-margin-remove">up to 80%</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button type="button" data-uk-toggle="target: .navbar-collapse; cls: hidden-up-to-m" class="uk-navbar-toggle uk-hidden@m uk-float-right uk-margin-auto-left" data-uk-navbar-toggle-icon></button>
+        </nav>
+      </div>
+    </div>
+    <button class="uk-button uk-button-default uk-button-large uk-button-small@s uk-float-right uk-position-relative uk-text-uppercase shop_more">MEN's collection</button>
+  </div>
+</section>
+<!--          HEADER PART ENDS        -->
