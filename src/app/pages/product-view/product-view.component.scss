@@ -1,0 +1,108 @@
+.product_head_name{
+  color: #00C8C8;
+}
+
+.product_head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containing{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+@media (max-width: 2000px) {
+span{
+  font-size: 12px;
+}
+  .add_rev{
+    font-size: 12px;
+  }
+}
+.add_rev{
+color: #727272;
+  text-decoration: none;
+}
+.add_rev:hover{
+  color: #00C8C8;
+}
+.uk-visible-toggle:not(:hover):not(:focus) .uk-hidden-hover:not(:focus-within) {
+   position: absolute !important;
+   width: 40px!important;
+   height: 40px !important;
+   padding: 5px !important;
+  margin: 18px!important;
+   overflow: visible !important;
+}
+
+.uk-card-body {
+  padding: 10px 17px;
+}
+
+.uk-divider-vertical {
+  width: 1px;
+  height: 19px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-left: 1px solid #e5e5e5;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.star_width{
+  width: 14px;
+}
+
+.top_nav{
+  align-items: flex-end;
+}
+
+.actual_price{
+  font-size: 24px;
+  text-decoration: line-through;
+  margin-right: 15px;
+}
+.disctount_price{
+  font-size: 24px;
+}
+
+.tags{
+  color: #00C8C8;
+}
+
+.fonting{
+  font-size: 13px;
+}
+
+.dec_pad{
+  padding: 0 10px;
+}
+
+.action_buttons{
+  align-items: center;
+}
+
+.action_buttons:hover{
+  background: #333333;
+  color: white;
+}
+.high_font{
+  font-size: 40px !important;
+}
+.uk-subnav{
+  background: #F8F8F8;
+}
+
+.uk-subnav-pill > .uk-active > a {
+  background-color: #333333;
+  color: #fff;
+}
+
+.uk-subnav > * {
+  flex: none;
+  padding-left: 20px;
+  position: relative;
+  width: 107px;
+  text-align: center;
+}
