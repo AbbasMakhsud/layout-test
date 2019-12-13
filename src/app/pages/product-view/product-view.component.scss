@@ -12,6 +12,12 @@
   padding-left: 15%;
   padding-right: 15%;
 }
+@media (max-width:1368px) {
+  .containing{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
 @media (max-width: 2000px) {
 span{
   font-size: 12px;
