@@ -91,6 +91,39 @@ background: none !important;
   color:#00C8C8 !important
 }
 
+.card_girl {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background-color: #fff;
+  background-image: url('../../../assets/images/girl.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  //box-shadow: 0px 0px 10px 2px rgba(#c5c5c5, 0.5);
+  box-sizing: border-box;
+  padding: 10px;
+  transition: all 0.3s;
+
+
+  &:hover {
+    transform: translateY(-10px);
+    background-position: center 50%;
+    background-size: cover;
+    box-shadow: 0px 0px 20px 0px rgba(119, 119, 119, 0.26);
+    overflow: visible;
+    z-index: 1;
+    .card__button {
+      transform: translateY(100%);
+      color: #727272;
+      background: #ffffff;
+      transition: all 0.3s;
+      z-index: 3;
+    }
+  }
+}
+
 .card {
   position: relative;
   width: 100%;
@@ -98,6 +131,71 @@ background: none !important;
   overflow: hidden;
   background-color: #fff;
   background-image: url('../../../assets/images/item1.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  //box-shadow: 0px 0px 10px 2px rgba(#c5c5c5, 0.5);
+  box-sizing: border-box;
+  padding: 10px;
+  transition: all 0.3s;
+
+
+  &:hover {
+    transform: translateY(-10px);
+    background-position: center 50%;
+    background-size: cover;
+    box-shadow: 0px 0px 20px 0px rgba(119, 119, 119, 0.26);
+    overflow: visible;
+    z-index: 1;
+    .card__button {
+      transform: translateY(100%);
+      color: #727272;
+      background: #ffffff;
+      transition: all 0.3s;
+      z-index: 3;
+    }
+  }
+}
+
+.card_green {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background-color: #fff;
+  background-image: url('../../../assets/images/green.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  //box-shadow: 0px 0px 10px 2px rgba(#c5c5c5, 0.5);
+  box-sizing: border-box;
+  padding: 10px;
+  transition: all 0.3s;
+
+
+  &:hover {
+    transform: translateY(-10px);
+    background-position: center 50%;
+    background-size: cover;
+    box-shadow: 0px 0px 20px 0px rgba(119, 119, 119, 0.26);
+    overflow: visible;
+    z-index: 1;
+    .card__button {
+      transform: translateY(100%);
+      color: #727272;
+      background: #ffffff;
+      transition: all 0.3s;
+      z-index: 3;
+    }
+  }
+}
+.card_orange {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background-color: #fff;
+  background-image: url('../../../assets/images/orange.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -213,8 +311,14 @@ footer{
   .card {
     height: 300px;
   }
+  .card_girl {
+    height: 300px;
+  }
   .large_card{
     height: 500px !important;
+  }
+  .card_orange {
+    height: 300px;
   }
   .men{
     font-size: 25px;
