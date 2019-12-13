@@ -60,8 +60,8 @@
           <div class="uk-navbar-right for_desk">
 
             <ul class="uk-navbar-nav navbar_height">
-              <li class="uk-flex">
-                <a href="#" *ngFor="let menu of menus">{{menu.name}}</a>
+              <li class="uk-flex" *ngFor="let menu of menus">
+                <a href="#" class="coloring">{{menu.name}} <span  uk-icon="chevron-down"></span></a>
                 <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
                   <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
                     <div>
@@ -95,7 +95,7 @@
 
               <ul class="uk-navbar-nav navbar_height">
                 <li class="uk-flex for_mobile">
-                  <a href="#" *ngFor="let menu of menus">{{menu.name}}</a>
+                  <a href="#" *ngFor="let menu of menus" >{{menu.name}}</a>
                   <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
                     <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
                       <div>
@@ -134,7 +134,7 @@
 <!--          HEADER PART ENDS        -->
 
 <!--          PRODUCTS PART        -->
-<section id="products" class="uk-margin-medium-top">
+<section id="products" class="uk-margin-medium-top uk-margin-medium-bottom">
   <hr class="dividing_section">
   <div class="uk-navbar-container contained changing_bg" >
     <ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
@@ -150,27 +150,33 @@
             <div class="uk-text-center" uk-grid>
               <div class=" uk-width-1-2 ">
                   <div class="card">
-                    <a href="#" class="card__button">Learn more</a>
+
+                    <a href="#" class="card__button">Learn more
+                      <div class="uk-flex actions">
+                        <span class="uk-float-left uk-flex-center action_item" uk-icon="cart"></span>
+                        <span class="uk-float-left uk-flex-center action_item" uk-icon="heart"></span>
+                        <span class="uk-float-left uk-flex-center action_item" uk-icon="shrink"></span>
+                      </div>
+                    </a>
+
                   </div>
               </div>
               <div class="uk-width-1-2 ">
                   <div class="card">
                     <p class="product_price uk-float-left">£89.99</p>
                     <div class="card__button">
-                      <p  class="info_text">WOMENS BURNT ORANGE CASUAL TEE  £29.95</p>
-                      <p  class="info_text">Classic casual t-shirt for women on the move.</p>
-                      <p  class="info_text">100% cotton.</p>
-                      <p  class="info_text">A hard-wearing sports t-shirt with microvent technology.</p>
+                      <p  class="info_text uk-text-bold">WOMENS BURNT ORANGE CASUAL TEE  £29.95</p>
+                      <p  class="info_text uk-text-capitalize">Classic casual t-shirt for women on the move.</p>
+                      <p  class="info_text uk-text-capitalize">100% cotton.</p>
                     </div>
                   </div>
               </div>
               <div class="uk-width-1-1">
               <div class="card large_card">
                 <div class="card__button">
-                  <p  class="info_text">WOMENS BURNT ORANGE CASUAL TEE  £29.95</p>
-                  <p  class="info_text">Classic casual t-shirt for women on the move.</p>
-                  <p  class="info_text">100% cotton.</p>
-                  <p  class="info_text">A hard-wearing sports t-shirt with microvent technology.</p>
+                  <p  class="info_text uk-text-bold">WOMENS BURNT ORANGE CASUAL TEE  £29.95</p>
+                  <p  class="info_text uk-text-capitalize">Classic casual t-shirt for women on the move.</p>
+                  <p  class="info_text uk-text-capitalize">100% cotton.</p>
                 </div>
               </div>
               </div>
@@ -181,10 +187,9 @@
               <div class="uk-width-1-1">
                 <div class="card large_card">
                 <div class="card__button">
-                  <p class="info_text">WOMENS BURNT ORANGE CASUAL TEE  £29.95</p>
-                  <p class="info_text">Classic casual t-shirt for women on the move.</p>
-                  <p class="info_text">100% cotton.</p>
-                  <p class="info_text">A hard-wearing sports t-shirt with microvent technology.</p>
+                  <p class="info_text uk-text-bold">WOMENS BURNT ORANGE CASUAL TEE  £29.95</p>
+                  <p class="info_text uk-text-capitalize">Classic casual t-shirt for women on the move.</p>
+                  <p class="info_text uk-text-capitalize">100% cotton.</p>
                 </div>
               </div>
               </div>
@@ -197,10 +202,9 @@
                 <div class="card">
                   <p class="product_price uk-float-left">£89.99</p>
                   <div class="card__button">
-                    <p  class="info_text">WOMENS BURNT ORANGE CASUAL TEE  £29.95</p>
-                    <p  class="info_text">Classic casual t-shirt for women on the move.</p>
-                    <p  class="info_text">100% cotton.</p>
-                    <p  class="info_text">A hard-wearing sports t-shirt with microvent technology.</p>
+                    <p  class="info_text uk-text-bold">WOMENS BURNT ORANGE CASUAL TEE  £29.95</p>
+                    <p  class="info_text uk-text-capitalize">Classic casual t-shirt for women on the move.</p>
+                    <p  class="info_text uk-text-capitalize">100% cotton.</p>
                   </div>
                 </div>
               </div>
@@ -212,7 +216,7 @@
       <li>Bazinga!</li>
     </ul>
   </div>
-  <hr class="dividing_section">
+  <hr class="dividing_section uk-margin-medium-top">
 </section>
 <!--          PRODUCTS ENDS        -->
 
@@ -227,7 +231,7 @@
             <canvas width="600" height="400"></canvas>
           </div>
           <div class="dec_pad">
-            <div class="uk-card-body ">
+            <div class="uk-card-body uk-flex uk-flex-column uk-align-right uk-text-right">
               <h3 class="uk-card-title uk-float-right men">Men's</h3>
               <p class="uk-float-right lookbook_h">LOOKBOOK</p>
               <p class="uk-float-right uk-text-right lookbook_text">Lorem ipsum dolor sit amet eras facilisis
@@ -245,7 +249,7 @@
             <canvas width="600" height="400"></canvas>
           </div>
           <div class="dec_pad">
-            <div class="uk-card-body ">
+            <div class="uk-card-body uk-flex uk-flex-column uk-align-right uk-text-right">
               <h3 class="uk-card-title uk-float-right men">Men's</h3>
               <p class="uk-float-right lookbook_h">LOOKBOOK</p>
               <p class="uk-float-right uk-text-right lookbook_text">Lorem ipsum dolor sit amet eras facilisis
@@ -263,7 +267,7 @@
             <canvas width="600" height="400"></canvas>
           </div>
           <div class="dec_pad">
-            <div class="uk-card-body ">
+            <div class="uk-card-body uk-flex uk-flex-column uk-align-right uk-text-right">
               <h3 class="uk-card-title uk-float-right men">Men's</h3>
               <p class="uk-float-right lookbook_h">LOOKBOOK</p>
               <p class="uk-float-right uk-text-right lookbook_text">Lorem ipsum dolor sit amet eras facilisis

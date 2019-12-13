@@ -59,8 +59,11 @@
 }
 .the_logo_font{
   font-size: 24px;
+  color: #222222;
 }
-
+.coloring{
+  color: #222222 !important;
+}
 .shop_more{
   bottom: 120px;
   right:160px
@@ -98,7 +101,7 @@ background: none !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 0px 0px 10px 2px rgba(#c5c5c5, 0.5);
+  //box-shadow: 0px 0px 10px 2px rgba(#c5c5c5, 0.5);
   box-sizing: border-box;
   padding: 10px;
   transition: all 0.3s;
@@ -108,13 +111,12 @@ background: none !important;
     transform: translateY(-10px);
     background-position: center 50%;
     background-size: cover;
-    box-shadow: 0px 0px 20px 0px rgba(#777777, 0.6);
+    box-shadow: 0px 0px 20px 0px rgba(119, 119, 119, 0.26);
     overflow: visible;
     z-index: 1;
-
     .card__button {
       transform: translateY(100%);
-      color: #027090;
+      color: #727272;
       background: #ffffff;
       transition: all 0.3s;
       z-index: 3;
@@ -123,6 +125,7 @@ background: none !important;
 }
 
 .card__button {
+  box-shadow: 0px 0px 20px 0px rgba(119, 119, 119, 0.26);
   position: absolute;
   left: 0;
   bottom: 0;
@@ -160,7 +163,7 @@ background: none !important;
 }
 
 .lookbook_h{
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 4px;
   margin-top: 0;
 }
@@ -204,6 +207,8 @@ footer{
   justify-content: center;
   padding: 0;
 }
+
+
 @media (max-width: 1800px) {
   .card {
     height: 300px;
@@ -218,7 +223,7 @@ footer{
   }
 
   .lookbook_h{
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 4px;
     margin-top: 0;
   }
@@ -241,6 +246,26 @@ footer{
   align-items: flex-end;
   padding-bottom: 15px;
 }
+
+.actions{
+  justify-content: space-around;
+  /* justify-items: right; */
+  width: 71%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.action_item{
+  padding: 5px;
+  border-radius: 50%;
+  background: #727272;
+  color: white;
+}
+.action_item:hover{
+  background: #00C8C8;
+}
+
 
 @media (max-width: 994px) {
   .large_card {
@@ -349,3 +374,16 @@ footer{
     padding-bottom: 6px;
   }
 }
+
+.uk-button-default:hover, .uk-button-default:focus {
+  background-color: #00C8C8;
+  color: #ffffff;
+  border-color: #b2b2b2;
+}
+
+@media (max-width: 1600px) {
+    .uk-card-body {
+      padding: 21px 8px;
+    }
+}
+

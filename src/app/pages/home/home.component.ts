@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   menus = [
-    { name: 'MENS'},
+    { name: 'MEN'},
     { name: 'WOMEN'},
     { name: 'THE BRAND'},
     { name: 'LOCAL STORE'},
